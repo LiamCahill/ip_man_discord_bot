@@ -19,9 +19,17 @@ function createCommandChoices() {
 
 // Simple test command
 const TEST_COMMAND = {
-  name: 'test',
+  name: 'test_but_updated',
   description: 'Basic command',
   type: 1,
+};
+
+
+//Liam's command
+const LIAM_COMMAND = {
+    name: 'liam_cmd_updated',
+    description: 'A command that some, including Liam, may use.',
+    type: 1,
 };
 
 // Command containing options
@@ -40,6 +48,6 @@ const CHALLENGE_COMMAND = {
   type: 1,
 };
 
-const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND];
+const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND, LIAM_COMMAND];
 
 InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);
